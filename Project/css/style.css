@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear {clear: both;}
+
+header {
+    padding: 8px 0;
+}
+
+header > .container  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h2 {
+    font-weight: normal;
+    font-size: 25px;
+}
+
+nav.menu-desktop li {
+    display: inline-block;
+    font-weight: lighter;
+    padding: 0 15px;
+}
+
+nav.menu-desktop li.selected {
+    font-weight: bold;
+}
+
+nav.menu-desktop a {
+    color: black;
+    text-decoration: none;
+}
+
+nav.menu-desktop a:hover {
+    text-decoration: underline;
+}
+
+/* Section main */
+
+section.main-bg {
+    position: relative;
+    width: 100%;
+    padding: 150px 0 200px 0;
+    background-image: url('../image/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+section.main-bg > .container {
+    position: relative;
+    z-index: 2;
+}
+
+.overlay {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,0.3);
+    left: 0;
+    top: 0;
+}
+
+section.main-bg h2 {
+    color: #52aaa7;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+section.main-bg p {
+    text-align: left;
+    color: white;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+section.diferencias {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.line-text {
+    position: relative;
+    display: inline-block;
+    color: #52aaa7;
+}
+
+.line-text > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 3px;
+    background-color: #52aaa7;
+}
+
+.line-text h2 {
+    font-weight: normal;
+    font-size: 27px;
+}
+
+.icones-diferencias {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.box-icone-single {
+    margin: 0 50px;
+}
+
+.box-icone-single h2 {
+    color: #8a6b62;
+    font-size: 40px;
+}
+
+.box-icone-single p {
+    color: #646464;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 15px;
+}
+
+section.sobre-equipe {
+    padding: 30px 0;
+    background: rgb(225,225,225);
+}
+
+section.sobre-equipe > .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equipe-container {
+    width: 50%;
+}
+
+.avatar-box {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-avatar {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+}
+
+.descricao-avatar {
+    padding: 0 10px;
+    width: calc(100% - 70px);
+    display: inline-block;
+}
+
+.descricao-avatar h3 {
+    color: rgb(30,30,30);
+    font-weight: normal;
+    font-style: italic;
+}
+
+.descricao-avatar p {
+    color: rgb(30,30,30);
+    font-weight: lighter;
+}
+
+
+.sobre-container {
+    width: 50%;
+}
+
+.sobre-container p {
+    margin-top: 30px;
+    color: #646464;
+    font-size: 16px;
+}
+
+section.inscricao {
+    background: #52aaa7;
+    padding: 10px 0;
+}
+
+section.inscricao > .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+section.inscricao .title h2 {
+    color: white;
+    font-weight: normal;
+}
+
+section.inscricao .form {
+    margin-top: 8px;
+    text-align: center;
+}
+
+section.inscricao .form input[type=text]{
+    width: 250px;
+    height: 30px;
+}
+
+section.inscricao .form input[type=submit]{
+    width: 100px;
+    height: 30px;
+    border: 0;
+    margin-left: -5px;
+    background: #326866;
+    cursor: pointer;
+    color: white;
+}
+
+section.cards {
+    margin-top: 30px;
+}
+
+section.cards > .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-single {
+    width: 33.3%;
+    padding-top: 33.3%;
+    padding: 15px;
+}
+
+.card-single img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-single .desc h3 {
+    color: #646464;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.card-single .desc p {
+    font-size: 16;
+    font-weight: lighter;
+    padding: 12px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+footer.footer1 {
+    margin-top: 20px;
+    background: #52aaa7;
+    padding: 10px 0;
+}
+
+footer.footer1 > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer.footer1 .footer-content {
+    margin: 10px 30px;
+}
+
+footer.footer1 h2 {
+    font-size: 22px;
+    color: white;
+    font-weight: normal;
+}
+
+footer.footer1 p {
+    margin-top: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+footer.footer1 a {
+    color: white;
+}
+
+footer.footer1 .footer-content a i {
+    font-size: 22px;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+footer.footer2 {
+    background: #326866;
+    padding: 20px;
+    text-align: center;
+}
+
+footer.footer2 p {
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+
+@media screen and (max-width: 768px) {
+    .icones-diferencias {
+        flex-wrap: wrap;
+    }
+
+    .box-icone-single {
+        margin-top: 30px;
+    }
+
+    .equipe-container {
+        width: 100%;
+    }
+
+    .sobre-container {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    section.inscricao .form input[type=submit]{
+        margin-top: 8px;
+    }
+
+    .card-single {
+        width: 100%;
+        padding-top: 100%;
+        padding: 15px;
+    }
+    
+}
